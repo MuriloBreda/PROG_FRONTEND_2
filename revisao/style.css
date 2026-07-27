@@ -1,0 +1,9 @@
+.cabecalho{
+    background-color: antiquewhite;
+    color: rgb(102, 58, 0);
+}
+
+#card-header{
+    background-color: rgb(82, 46, 0);
+    color: white;
+}
