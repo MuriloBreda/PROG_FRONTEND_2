@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <style>
+
+        .tarefa {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .concluida {
+            border: 1px solid green;
+            color: green;
+        }
+
+        .pendente {
+            border: 1px solid red;
+            color: red;
+        }
+
+        #total {
+            font-weight: bold;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Lista de Tarefas</h1>
+
+    <button onclick="buscarTarefas()">Buscar tarefas</button>
+    <button onclick="filtrarConcluidas()">Mostrar concluídas</button>
+
+    <div id="total"></div>
+
+    <div id="tarefas"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
