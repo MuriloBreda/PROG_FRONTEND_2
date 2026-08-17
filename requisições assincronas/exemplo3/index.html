@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    button{
+        display: block;
+        margin: 20px auto;
+        width: 50%;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+
+        color: white;
+        background-color: cornflowerblue;
+    }
+
+    #mensagem{
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 20px;
+        color: green;
+    }
+
+    div#listaUsuarios{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #listaUsuarios div{
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+</style>
+<body>
+    <h1>Usuários Cadastrados</h1>
+
+    <button id="btnBuscar">Buscar Usuários</button>
+
+    <p id="mensagem"></p>
+
+    <div id="listaUsuarios">
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

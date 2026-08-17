@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Pokémon</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f4f6f8;
+    color: #222;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+input {
+    width: 420px;
+    max-width: 100%;
+    height: 52px;
+    padding: 0 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #555;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+button {
+    width: 420px;
+    max-width: 100%;
+    height: 52px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #333;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+h1 img {
+    width: 45px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+#resultado {
+    width: 420px;
+    max-width: 100%;
+    margin-top: 25px;
+    padding: 25px;
+    background: white;
+    border-radius: 14px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    min-height: 80px;
+}
+
+</style>
+<body>
+    <h1>Buscar Pokémon<img src="pokeball.gif"></h1>
+
+    <input type="text" id="nome" placeholder="Digite o nome do Pokémon">
+
+    <button id="btnBuscar">Buscar</button>
+
+    <div id="resultado">
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
