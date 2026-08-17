@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultar Postagens</title>
+    <title>Exercício 3 - Postagens</title>
 </head>
+
 <body>
-    <h1>Consultar Postagens</h1>
 
-    <input type="text" id="postagem" placeholder="Digite o Título da postagem">
+    <h1>Postagens</h1>
 
-    <button id="btnConsultar">Consultar</button>
-    
+    <button onclick="buscarPostagens()">Buscar Postagens</button>
+
+    <br><br>
+
+    <input type="text" id="pesquisa" placeholder="Pesquisar pelo título">
+
+    <p>Quantidade de resultados: <span id="quantidade">0</span></p>
+
+    <p id="mensagem"></p>
+
+    <div id="postagens"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
