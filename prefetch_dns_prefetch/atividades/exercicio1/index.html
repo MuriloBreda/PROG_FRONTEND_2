@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamentos Industriais</title>
+
+    <!-- Importando Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Importando css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Prefetch iamgens -->
+    <link rel="prefetch" href="esteira.jpg" as="image">
+    <link rel="prefetch" href="braço.jpg" as="image">
+    <link rel="prefetch" href="prensa.jpg" as="image">
+
+    <!-- Prefetch Detalhes -->
+    <link rel="prefetch" href="detalhesEsteira.html" as="document">
+    <link rel="prefetch" href="detalhesBraco.html" as="document">
+    <link rel="prefetch" href="detalhesPrensa.html" as="document">
+
+    <!-- Prefetch DNS -->
+    <link rel="dns-prefetch" href="https://viacep.com.br">
+
+</head>
+
+<body>
+    <header class="bg-dark text-white p-3">
+        <h1 class="text-center">Equipamentos Industriais</h1>
+    </header>
+    <main class="container my-4 d-flex flex-wrap justify-content-center gap-4">
+        <!-- Esteira Transportadora -->
+        <section class="card" style="max-width: 320px">
+            <img src="esteira.jpg" class="card-img-top" alt="Esteira Transportadora">
+            <div class="card-body">
+                <h4 class="card-title">Esteira Transportadora</h4>
+                <p class="card-text">
+                    Esteira transportadora de alta capacidade para uso industrial.
+                </p>
+                <a href="detalhesEsteira.html" class="btn-solid theme-primary" id="btnEsteira">Ver Detalhes</a>
+            </div>
+        </section>
+
+        <!-- Braço Robótico Industrial -->
+        <section class="card" style="max-width: 320px">
+            <img src="braço.jpg" class="card-img-top" alt="Braço Robótico Industrial">
+            <div class="card-body">
+                <h4 class="card-title">Braço Robótico Industrial</h4>
+                <p class="card-text">
+                    Braço robótico de alta precisão para automação industrial.
+                </p>
+                <a href="detalhesBraco.html" class="btn-solid theme-primary" id="btnBraco">Ver Detalhes</a>
+            </div>
+        </section>
+
+        <!-- Prensa Hidráulica -->
+        <section class="card" style="max-width: 320px">
+            <img src="prensa.jpg" class="card-img-top" alt="Prensa Hidráulica">
+            <div class="card-body">
+                <h4 class="card-title">Prensa Hidráulica</h4>
+                <p class="card-text">
+                    Prensa hidráulica de alta pressão para processos de formação e compactação.
+                </p>
+                <a href="detalhesPrensa.html" class="btn-solid theme-primary" id="btnPrensa">Ver Detalhes</a>
+            </div>
+        </section>
+
+        <!-- prefetch dns -->
+        <section class="card" style="width: 100%">
+            <div class="card-body">
+                <h4 class="card-title">Consultar CEP</h4>
+                <p class="card-text">
+                    Consulte o endereço correspondente ao seu CEP.
+                </p>
+                <form id="formCep">
+                    <label for="cep">Digite seu CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="9" class="form-control mb-2">
+
+                    <button type="submit" class="btn-solid theme-primary" style="background-color: #007bff; border-radius: 5px; width: 100%; color: white; padding: 10px; ">Consultar CEP</button>
+                </form>
+
+                <p id="resultado" style="margin-top: 10px; text-align: center;"></p>
+            </div>
+    </main>
+
+    <!-- Importando JS -->
+    <script src="app.js"></script>
+
+    <!-- Importando Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
